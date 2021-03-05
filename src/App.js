@@ -10,10 +10,10 @@ function App() {
 
   const [products,setProducts]=useState([{id:1,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
 
-  {id:2,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
+  {id:2,name:'hp-w-20',price:44000,img:'',description:"Nothing",quantity:4},
 
-  {id:3,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
-  {id:4,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
+  {id:3,name:'hp-w-20',price:44000,img:'',description:"Nothing",quantity:4},
+  {id:4,name:'hp-w-20',price:44000,img:'',description:"nothing",quantity:4},
   
   
   ])
