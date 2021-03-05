@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar'
+import {useState} from 'react'
+import Home from './components/pages/Home'
+
 
 function App() {
+
+
+  const [products,setProducts]=useState([{id:1,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
+
+  {id:2,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
+
+  {id:3,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
+  {id:4,name:'hp-w-20',price:44000,img:'',description:"khsdfljlf",quantity:4},
+  
+  
+  ])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+    <>
+
+
+     <NavBar/>
+
+     <Home  products={products}/>
+       
+       
+    </>
+    
   );
 }
 
