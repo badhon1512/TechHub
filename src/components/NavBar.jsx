@@ -5,9 +5,10 @@ import '../style/Navbar.module.css'
 function NavBar() {
   return (
     <div>
+
       
       <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Navbar.Brand href="#home">Tech-Hub</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">Laptop</Nav.Link>
