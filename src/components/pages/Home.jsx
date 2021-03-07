@@ -9,7 +9,7 @@ function Home(props) {
   return (
 
     <div className={"container"}>
-    <div className={"row"} >
+    <div className={"row ml-4"} >
 
 
 
@@ -18,7 +18,7 @@ function Home(props) {
 
         
         props.products.map((product,index)=>
-        <div className={"col-sm-3 mr-5"}>
+        <div className={"col-sm-4  mb-5"}>
         <Link to={"/product-list"}><ItemCard getItems={props.getItems}  product={product}/></Link>  
         </div>
 

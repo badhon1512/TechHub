@@ -16,7 +16,7 @@ export const productsdata = [
         id: 1002,
         brand: "Dell",
         model:
-          "Dell Vostro 14-3401 10th Gen Core i3 14” HD Laptop With 3 Years Warranty",
+          "Dell Vostro 14-3401 10th Gen Core i3 14” HD Laptop",
         price: 46000,
         quantity: 20,
         description: `Dell Vostro 14-3490 Laptop comes with Intel Core i5-1005G1 Processor (4MB Cache, up to 3.4 GHz), 4GB DDR4 3200Mhz RAM, Intel UHD Graphics, 1TB HDD, 14"  HD (1366x768) Display and windows 10. This laptop is featured with 3-Cell, 42 WHr, Integrated battery, 45 Watt AC Adaptor with Power Cord, Stereo Speakers with Waves Maxx Pro Audio(R) 4.1. The laptop also has SD Card Reader (SD, SDHC, SDXC), USB 3.1 Gen 1 Type-A, USB 2.0, HDMI, VGA ports. The Dual Band 2.4&5 GHz, 1×1, Wireless 802.11ac, and Bluetooth 4.1 Network & Wireless Connectivity also available on this laptop.`,
@@ -37,7 +37,7 @@ export const productsdata = [
         id: 1004,
         brand: "Xiomi",
         model:
-          "Xiaomi Redmi Book 13 Ryzen 5 4500U 13.3” FHD Laptop with Windows 10",
+          "Xiaomi Redmi Book 13 Ryzen 5 4500U 13.3” FHD Laptop",
         price: 70000,
         quantity: 20,
         description: `Xiaomi Redmi Book 13 XMA1930-DJ Laptop comes with AMD Ryzen 5 4500U (11MB Cache, 2.3GHz Up to 4.0GHz) Processor, 16GB DDR4 RAM, 512GB SATA SSD, AMD Radeon Graphics integrated graphics with Windows 10. This laptop is also designed with 13.3 Inch FHD (1920 x 1080) IPS 250nit Brightness, 45% NTSC, 178° Viewing Angle Display, Li-ion polymer battery, 40Wh; (USB-C - USB 3.0 - Fast Charging) with 3.5mm audio jack. Sound Card: Realtek ALC256, Speaker: 2 × 2W, Sound system: support DTS Audio Processing technology. The new Xiaomi Redmi Book 13 XMA1930-DJ laptop comes with a Full-size keyboard, 1.3mm key process, VGA WebCam, microSD media card reader with AC Adapter, 100-240V; Support 1C QC. Here Wi-Fi 802.11 B/G/N/Ac - 2.4 GHz + 5 GHz Intel 2 × 2 WiFi and Bluetooth 5.0 are also available. The new Xiaomi Redmi Book 13 XMA1930-DJ Laptop has 01 year (battery adapter 06 months) warranty.`,
@@ -77,7 +77,7 @@ export const productsdata = [
         quantity: 4,
         discription:
           "You don't need to be a photographer to know a great photo when you see one.And you don't need to be a photographer to take a great photo—you just need the D3500. It's as easy to use as a point-and-shoot, but it takes beautiful DSLR photos and videos that get noticed. It feels outstanding in your hands, sturdy and balanced with controls where you want them. It's compact, durable and versatile, ideal for travel. And it works seamlessly with compatible smartphones, making it easier than ever to share your great photos. Even if you've never picked up a DSLR camera, you can take beautiful pictures with D3500. Take more memorable images. The photos you take with the D3500 capture more than the moment—they capture the feeling of the moment, a feeling that can be shared immediately with your friends and family and then relived for a lifetime. If you can take a picture with your smartphone, you can take a great picture with the D3500. Auto Mode delivers amazing results in nearly any situation. If you want to learn while you shoot, turn on Guide Mode and follow simple on-screen guidance. The D3500 is fast, responsive and simple to use. You won't be stuck fussing with camera controls while a great moment passes you by. Just point, shoot and share amazing photo after photo. The D3500 simply feels great in your hands. It's lightweight and balanced, even with a telephoto lens attached. Each button and dial is carefully placed for comfort and ease of use, and the menu system is simple and intuitive. Small enough to be discrete, durable enough to withstand rough conditions; the camera is also available with two outstanding travel lenses, you'll never want to leave home without the D3500. Download Nikon's free SnapBridge app and your D3500 photos will appear right on a compatible smartphone or tablet* for posting to your favorite sites, sharing with friends and family or just as backups. You can even use the smartphone or tablet to remotely trigger the D3500 to take pictures. Recording beautiful video with the D3500 is as easy as shooting photos. Just flip the Live View lever and press the record button. You’ll be capturing awesome 1080/60p Full HD video instantly and effortlessly. Use your lens' zoom capability to shoot wide angle videos or tight close-ups. Some of the best moments only last a split second. Press and hold the shutter button on the D3500 and capture up to 5 frames per second at full resolution with tack-sharp focus, ensuring you land the shot that matters. Unlike typical smartphones, fast-moving subjects are no problem for the D3500. 11 autofocus points are spread across the frame, and fulltime AF locks onto your subject and keeps it in focus while you capture amazing shot after shot. The D3500 Two Lens Kit includes two matched lenses to help you cover all the angles. The AF-P DX NIKKOR 18-55mm f/3.5-5.6G VR lens is great for portraits, landscapes, videos and other wide perspective shots. The AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED is a versatile telephoto zoom lens that's great for sports, concerts, nature and more. Every Nikon DSLR lens offers a fun new perspective. Discover new worlds with an extreme close-up macro lens. Give your backgrounds a dreamy out of focus effect with a fast prime lens. Capture the whole scene with an ultra-wide-angle zoom lens. The possibilities are endless.",
-        warranty: "03 Years Service Warranty (No parts warranty)",
+        warranty: 3,
         image:
           "https://www.startech.com.bd/image/cache/catalog/dslr-camera/nikon/d-3500/d-3500-500x500.jpg",
       },
@@ -89,10 +89,30 @@ export const productsdata = [
         quantity: 5,
         discription:
           "Tell distinctive stories with your photography. This beginner’s DSLR with EF-S 18-55mm f/3.5-5.6 III Lens intuitively creates stand-out photos and Full HD movies full of colour and detail – offering partial and full manual photographic control. The 18 Megapixel APS-C sensor allows you to shoot in low light, expressing your creativity with interchangeable lenses. Point and shoot with Scene Intelligent Auto and share your stories using the EOS 4000D’s Wi-Fi with the and Camera Connect app.Shoot detailed images into the night with a large 18 Megapixel sensor, with up to 19x more surface area than many smartphonesExperience the power of interchangeable lenses and capture high-quality shots of people and places with the EF-S 18-55mm f/3.5-5.6 III LensInstantly review results on the user-friendly, 6.8 cm (2.7”) LCD screenEnjoy fast Auto Focus and full resolution shooting at 3.0 fps – just point and shoot for impressive results with Scene Intelligent AutoTake fun-filled selfies and unique images from unusual angles with the remote control, then easily share to social media and irista cloud back up with Wi-Fi¹ and Canon Camera Connect appLearn as you shoot with Creative Auto mode, in-camera feature guide and Photo Companion app (Android and iOS)Expand your shooting options with an extensive range of interchangeable lenses and accessories",
-        warranty: "03 Years Service Warranty (No parts warranty)",
+        warranty: 3,
         image:
           "https://www.startech.com.bd/image/cache/catalog/camera/dslr-camera/canon/4000d/4000d-1-500x500.jpg",
       },
+      {
+        id:2003,
+        brand:"Canon",
+        model: "CANON EOS 1500D 24.1MP WITH 18-55 IS II LENS",
+        price: 30000,
+        quantity: 6,
+        discription:"All camera users, even beginners, will be able to capture amazing images and movies with Canon EOS 1500D DSLR camera. The 24.1 MP CMOS sensor delivers sharp images that remain clear even when they are enlarged. The APS-C size gives you a wide field of view (1.6 times the field of view of the 35 mm format). DIGIC 4+ Image Processor enhances image quality, even in low light conditions, and reduces noise. With this processor, you can have a fast and responsive shooting experience. With its wide sensitivity-rating range (from ISO 100 to 6400, that is expandable by up to 12800), you can capture the finer details with this camera. You won't even need a flash in dim light conditions. You can connect this camera to your smart devices with Canon's free Camera Connect app and share your pictures on social media. This fast and accurate feature (normal and high-precision focus, depending on the aperture and available light) can capture clear and crisp pictures with noteworthy consistency. This camera captures clear pictures of action-packed sports without any blurring with the help of viewfinder. The 920,000-dot resolution on the 7.62 cm (3) LCD monitor, which has a viewing angle of 170 degrees, lets you view what you've captured clearly. Camera settings, such as AF, ISO, Metering, AF Point Selection and other flash options, are available right on its screen. Scene Intelligent Auto mode brings out the charm of any picture by adjusting the exposure, while optimising white balance. ",
+        warranty:4,
+        image:"https://www.startech.com.bd/image/cache/catalog/camera/dslr-camera/canon/1500d/1500d-7-500x500.jpg"
+      },
+      {
+        id:2004,
+        brand:"Sony",
+        model:"Sony ALPHA A6100 24.MP Mirrorless Digital Camera with 16-50mm Lens",
+        price:45000,
+        quantity:21,
+        description:"Capture special moments and portraits to remember and share. Thanks to stunning image quality and speed based on technology developed for our full-frame models, you can leave the hard work to the camera. The α6100 ensures you'll never miss an instant. Keeping active subjects in constant, steady focus is absolutely vital to capturing every important moment, whether you're covering a sporting event or documenting everyday life. Sony's sophisticated AI-based subject-tracking algorithms won't let you down, processing massive volumes of spatial data at high speed and in real time. Real-time Eye AF provides continuous eye tracking when shooting portraits in motion. You can prioritize either the left or the right eye, and it works even when the face is partially hidden, backlit or facing downwards. Sony's innovative eye-detection algorithms have been adapted to animal as well as human, to give you sharply focused pet portraits and beautiful wildlife shots. The camera's wide AF coverage is based on dense arrays of 425 phase-detection points and 425 contrast-detection points, for greatly increased detection accuracy. Fast performance from the latest-generation processing engine helps achieve a remarkable 0.02-second AF acquisition speed, while advanced algorithms work to predict your subject's future location. Impressively speedy internal processing and the high-capacity buffer memory mean you can fire off continuous shots at up to 11fps with after-view or 8fps for real-time preview, with minimal display lag. You can take around 77 shots in JPEG (Standard) format in one continuous burst. Silent shooting is helpful in situations where noise would be distracting, such as at live performances or when taking animal portraits. The α6100 can shoot continuously without shutter noise at up to 8fps with AF/AE tracking, even in AF-C mode, and with Real-time Eye AF or with Real-time Tracking.",
+        warranty:4,
+        image:"https://www.startech.com.bd/image/cache/catalog/camera/mirriorless/sony/alpha-a6100/alpha-a6100-500x500.jpg"
+      }
     ],
   ],
   [
@@ -101,7 +121,7 @@ export const productsdata = [
       {
         id: 4001,
         brand: "Intel",
-        model: `Intel Core i9-9900K 9th generation Processor`,
+        model: `Intel Core i9-9900K Processor`,
         price: 34900,
         quantity: 20,
         description: `Intel Core i9-9900K 9th generation Processor
@@ -116,7 +136,7 @@ export const productsdata = [
       {
         id: 4002,
         brand: "Intel",
-        model: `Intel 9th Generation Core i5-9600K Processor`,
+        model: `Intel Core i5-9600K Processor`,
         price: 17300,
         quantity: 20,
         description: `Intel 9th Generation Core i5-9600K Processor
@@ -164,7 +184,7 @@ export const productsdata = [
       {
         id: 4006,
         brand: "AMD",
-        model: `AMD Ryzen 5 3400G Processor with Radeon RX Vega 11 Graphics`,
+        model: `AMD Ryzen 5 3400G Processor`,
         price: 17500,
         quantity: 20,
         description: `AMD Ryzen 5 3400G Processor with Radeon RX Vega 11 Graphics
@@ -174,4 +194,29 @@ export const productsdata = [
       },
     ],
   ],
+  [
+    "Monitor",
+    [
+      {
+        id:5001,
+        brand:"Asus",
+        model:"Asus VZ229HE Eye Care Full HD IPS Monitor",
+        price:12000,
+        quantity:5,
+        discription:"Asus VZ229HE full HD IPS pannel (1920x1080) 21.5 -inch ultraslim frameless eye care monitor has extraordinary viewing angel of 178° & 5ms (Gray to Gray) response time ideal for work and entertainment. Its eye care TÜV Rheinland-certified feature includes flicker-free and blue light filter to ensure a comfortable viewing experience and less eye fatigue while viewing for longer period. This spectacular 7mm-thin chassis design with ultra-slim, frameless features makes it suitable for multi-display setup. Purchase this stylish monitor for your home of office at the best price in Chattagram, Khulna, Rangpur, Dhaka & Sylhet. Place your order at Star Tech online shop and have the delivery at any place in Bangladesh.",
+        warranty:4,
+        image:"https://www.startech.com.bd/image/cache/catalog/monitor/asus/vz229he/vz229he-500x500.jpg"
+      },
+      {
+        id:5002,
+        brand:"LG",
+        model:"LG 22MN430M-B Full HD IPS Monitor",
+        price:11000,
+        quantity:8,
+        discription:"The new LG 22MN430M-B 22 inch Full HD IPS Monitor comes with IPS technology highlights the performance of liquid crystal displays, It is response times are shortened, color reproduction is improved, and users can view the screen at virtually any angle.In this monitor, Flicker Safe reduces the onscreenflicker level to almost zero, that helps protect eyes and users can comfortably work throughout the day. This new monitor is also comes with Brightness (Nits) 250, Frequency (Hz) 75Hz, Contrast Ratio (Original) 1000:1, Response Time (GTG) 5ms, ,Viewing Angle (degree) 178/178, Power Type Adapter, Power Supply (Voltage, Hz) 100 ~240V, 50/60Hz, Normal On 29W, Standby Power Consumption 0.3W and Tilt(Angle) -5~20 Degree. And also featured with Freesync, Black Stabilizer, Flicker Safe, Screen split2.0 (in OSC), DAS Mode, Crosshair, Reader Mode (Blue light reduction) with On Screen Control (OSC). This monitor Reducing blue light that help lessen eye fatigue, here Reader Mode provides optimal condition for reading with just a few movement of joystick control, you can more comfortably read your monitor screen. This new monitor is also comes with Radeon FreeSync technology, gamers can experience seamless, fluid movement throughout hi-res, fast-paced games. Radeon FreeSync virtually eliminates screen tearing and stuttering.",
+        warranty:4,
+        image:"https://www.startech.com.bd/image/cache/catalog/monitor/lg-monitor/22mn430m-b/22mn430m-b-1-500x500.jpg"
+      }
+    ]
+  ]
 ];
