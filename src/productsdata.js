@@ -7,7 +7,7 @@ export const productsdata = [
         brand: "Acer",
         model: "Acer Aspire 3 A315-23 Ryzen 3 3250U 15.6''HD Laptop",
         price: 41800,
-        quantity: 20,
+        quantity: 0,
         description: `Acer Aspire 3 A315-23 Laptop comes with AMD Ryzen 3 3250U (2.6 GHz up to 3.5 GHz, 1 MB L2 cache, 2 cores) Processor, 4GB DDR4 RAM, 1 TB 5400 RPM HDD and AMD Radeon dual-core Graphics. This Laptop is also featured with 15.6" HD 1366 x 768 resolution, high-brightness Acer ComfyView LED-backlit TFT LCD Display, 3-pin 45W AC Adapter, Windows 10 64-bit. The 802.11a/b/g/n/ac wireless LAN, IEEE 802.11ac/a/b/g/n and Bluetooth V4 Network & Wireless Connectivity are available in this laptop. Here, HD webcam with 640 x 480 resolution, SD media card reader, Stereo Speaker, mic and headphone combo jack, 1 x HDMI, 2 x USB 3.2 Gen 1 ports; 1 x USB 2.0 ports and connectors are also available in this Acer Laptop. The new Acer Aspire 3 Laptop has 02 years warranty.`,
         warranty: 2,
         image: `https://www.startech.com.bd/image/cache/catalog/laptop/acer/acer-aspire-3/acer-aspire-3-01-500x500.jpg`,
