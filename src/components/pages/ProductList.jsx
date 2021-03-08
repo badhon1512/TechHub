@@ -24,7 +24,7 @@ const ProductList=(props)=>
          
            <div style={{textAlign:"center"}} className={"col-sm-4 mb-5"}>
          
-            <ProductCard key={i} item={item} getProduct={props.getProduct}/>
+            <ProductCard key={i} item={item} getProduct={props.getProduct} getcartItems={props.getcartItems}/>
             
            </div>
             
