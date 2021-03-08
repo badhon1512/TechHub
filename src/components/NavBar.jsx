@@ -2,6 +2,7 @@ import React from 'react'
 import {Navbar,Nav,Form,FormControl,Button} from 'react-bootstrap'
 import '../style/Navbar.module.css'
 
+
 function NavBar() {
   return (
     <div>
@@ -10,8 +11,8 @@ function NavBar() {
       <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="/">Tech-Hub</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Laptop</Nav.Link>
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/product-list">Laptop</Nav.Link>
       <Nav.Link href="#pricing">Camera</Nav.Link>
       <Nav.Link href="#pricing">Tab</Nav.Link>
     </Nav>

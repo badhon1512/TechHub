@@ -11,7 +11,8 @@ const ItemCard=(props)=>{
 
 
 
-  <div onClick={()=> props.getItems(props.product[0],props.product[1])} style={{width: "18rem", textAlign:'center', backgroundColor:"rgb(242, 240, 240)",padding:10 }} >
+  
+      <div className="shadow-sm" onClick={()=> props.getItems(props.product[0],props.product[1])} style={{width: "18rem", textAlign:'center', backgroundColor:"rgb(222, 222, 222)",padding:10 }} >
 
 
 
@@ -26,7 +27,8 @@ const ItemCard=(props)=>{
     
    
   
-</div>
+
+  </div>
 
 
 

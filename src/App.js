@@ -7,6 +7,7 @@ import {productsdata} from './productsdata'
 import {Route,Link} from 'react-router-dom'
 
 import ProductList from './components/pages/ProductList'
+import ProductDescription from './components/pages/ProductDescription'
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
 
   const [items,setItems]=useState([])
   const [itemsName,setItemsName]=useState('')
+  
+  const [product,setProduct]=useState('')
 
   const getItems=(name,data)=>{
 
@@ -27,7 +30,12 @@ function App() {
 
 
   }
+  const getProduct = (product) =>{
+    setProduct(product)
+    console.log(product)
+  }
 
+  
   
 
 
@@ -37,15 +45,21 @@ function App() {
     <>
 
 
-     <NavBar/>
+     <NavBar />
 
 
     <Route path={"/"} exact> <Home getItems={getItems}   products={products}/></Route>
      
+    
 
+     <Route path={"/product-list"} exact><ProductList  name={itemsName} items={items} getProduct={getProduct} /></Route>
+     <Route path={"/product-list/product"} exact><ProductDescription  productDetails={product} /></Route>
+     
+  
+     
+     
 
-     <Route path={"/product-list"}><ProductList  name={itemsName} items={items}/></Route>
-
+    
 
        
        
