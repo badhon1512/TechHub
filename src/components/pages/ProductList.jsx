@@ -1,4 +1,5 @@
 import ProductCard from '../ProductCard'
+
 const ProductList=(props)=>
 {
 
@@ -23,7 +24,8 @@ const ProductList=(props)=>
          
            <div style={{textAlign:"center"}} className={"col-sm-4 mb-5"}>
          
-            <ProductCard key={i} item={item} getProductID={props.getProductID}/>
+            <ProductCard key={i} item={item} getProduct={props.getProduct}/>
+            
            </div>
             
          )

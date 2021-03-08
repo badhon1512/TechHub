@@ -20,6 +20,7 @@ function Home(props) {
         props.products.map((product,index)=>
         <div className={"col-sm-4  mb-5"}>
         <Link to={"/product-list"}><ItemCard getItems={props.getItems}  product={product}/></Link>  
+        
         </div>
 
           

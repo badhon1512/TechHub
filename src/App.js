@@ -30,16 +30,9 @@ function App() {
 
 
   }
-  const getProductID = (ID) =>{
-    const index = (Math.floor(ID/1000))-1
-    for(let i =0; i<products[index].length;i++){
-      
-      if(products[index][1][i].id ===  ID){
-        setProduct(products[index][1][i])
-        
-      }
-    }
-    console.log(product);
+  const getProduct = (product) =>{
+    setProduct(product)
+    console.log(product)
   }
 
   
@@ -59,9 +52,10 @@ function App() {
      
     
 
-     <Route path={"/product-list"} exact><ProductList  name={itemsName} items={items} getProductID={getProductID} /></Route>
-     
+     <Route path={"/product-list"} exact><ProductList  name={itemsName} items={items} getProduct={getProduct} /></Route>
      <Route path={"/product-list/product"} exact><ProductDescription  productDetails={product} /></Route>
+     
+  
      
      
 
