@@ -1,7 +1,22 @@
+/* eslint-disable no-unused-expressions */
 import React, { useState, useEffect } from "react";
 
 export default function ShowCartInfo(props) {
-  const [itemQuantity, setitemQuantity] = useState({});
+  const [itemQuantity, setItemQuantity] = useState([{}]);
+  
+
+   let totalPrice=0
+       itemQuantity.map((item)=>
+       
+         totalPrice+=item.price*item.quantity
+       )
+
+      
+
+      
+
+       
+  
 
   const incrementitemQuantity = (id) => {
     // let value;
@@ -9,38 +24,88 @@ export default function ShowCartInfo(props) {
     //  // item[0]===id ? value = item[1] : value =
 
     // })
-    console.log(itemQuantity);
+    let update=itemQuantity.map((item)=>{
+
+      if(item.id===id && item.quantity<item.totalQuantity)
+      {
+        item.quantity++;
+      }
+      //console.log("iteminc",item)
+      return item
+    })
+    setItemQuantity(update)
+   // console.log("inc",itemQuantity);
   };
 
-  const decrementitemQuantity = (id) => {};
+  const decrementitemQuantity = (id) => {
+
+    let update=itemQuantity.map((item)=>{
+
+      if(item.id===id && item.quantity!==0)
+      {
+        item.quantity--;
+      }
+      //console.log("iteminc",item)
+      return item
+    })
+    setItemQuantity(update)
+  }
+
+
 
   useEffect(() => {
-    props.cartItems.map((item) => {
-      console.log(itemQuantity);
-      let value;
-      itemQuantity.length
-        ? (value = { ...itemQuantity, [item.id]: 1 })
-        : (value = { [item.id]: 1 });
-      setitemQuantity(value);
-      console.log(itemQuantity);
-    });
-  }, []);
-  console.log(itemQuantity);
+    
+    
+    let newItems= props.cartItems.map((item) => {
+
+
+      
+
+    
+      let update={id:item.id,model:item.model,image:item.image,price:item.price,"quantity":1,totalQuantity:item.quantity}
+   
+     
+      return update
+   
+
+     
+    //value=[...value,[id]=1]
+      
+      
+    
+
+
+    }
+
+   
+     
+      
+    )
+
+    setItemQuantity(newItems)
+  }, [])
+  
 
   return (
     <div className="container" style={{ fontSize: "1.5rem" }}>
       <table className="table table-striped">
         <thead>
-          <tr>
+          <tr className="bg-primary text-white">
             <th scope="col">Model</th>
             <th scope="col">Image</th>
             <th scope="col">Quantity</th>
             <th scope="col">Price</th>
+            <th scope="col">SubTotal</th>
           </tr>
         </thead>
         <tbody>
-          {props.cartItems.map((item) => (
+          {itemQuantity.map((item) => (
+
+            
+             
+               
             <tr key={item.id}>
+             
               <th scope="row">{item.model}</th>
               <td>
                 <img
@@ -61,7 +126,7 @@ export default function ShowCartInfo(props) {
                     -
                   </button>
                 </span>
-                1
+                {item.quantity}
                 <span className="ml-2">
                   <button
                     className="btn btn-primary btn-sm"
@@ -73,11 +138,21 @@ export default function ShowCartInfo(props) {
                   </button>
                 </span>
               </td>
+
               <td>{item.price}</td>
+             
+
+              <td>{item.quantity*item.price}</td>
             </tr>
+           
           ))}
+          
+
         </tbody>
       </table>
+
+      <h3 className="text-center bg-warning"> Total Price {totalPrice}</h3>
     </div>
   );
 }
+

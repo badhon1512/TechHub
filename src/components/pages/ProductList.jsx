@@ -22,9 +22,9 @@ const ProductList=(props)=>
        {
          props.items.map((item,i)=>
          
-           <div style={{textAlign:"center"}} className={"col-sm-4 mb-5"}>
+           <div  key={i} style={{textAlign:"center"}} className={"col-sm-4 mb-5"}>
          
-            <ProductCard key={i} item={item} getProduct={props.getProduct} getcartItems={props.getcartItems}/>
+            <ProductCard item={item} getProduct={props.getProduct} getcartItems={props.getcartItems}/>
             
            </div>
             

@@ -31,7 +31,7 @@ function App() {
     cartItems.length ? (newItems = [...cartItems, item]) : (newItems = [item]);
     setCartItems(newItems);
   };
-  console.log(cartItems);
+  //console.log(cartItems);
   return (
     <>
       <NavBar cartItems={cartItems} />

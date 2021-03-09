@@ -29,7 +29,7 @@ const ProductCard = (props) => {
         <div>
           {props.item.quantity ? (
             <div>
-              {" "}
+             
               <Link
                 to={"/product-list/product"}
                 onClick={() => {
@@ -37,7 +37,7 @@ const ProductCard = (props) => {
                 }}
               >
                 See Details
-              </Link>{" "}
+              </Link>
               <div
                 className={"bg-primary mr-5 ml-5 text-light"}
                 style={{
@@ -62,8 +62,8 @@ const ProductCard = (props) => {
             </div>
           ) : (
             <div>
-              {" "}
-              <Link>See Details</Link>{" "}
+              
+              <Link to={"/product-list/product"}>See Details</Link>
               <div
                 className={"bg-warning mr-5 ml-5 text-dark"}
                 style={{
@@ -84,7 +84,7 @@ const ProductCard = (props) => {
                 Add to cart
               </button>
             </div>
-          )}{" "}
+          )}
         </div>
       </div>
     </>
