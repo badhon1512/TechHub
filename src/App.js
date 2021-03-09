@@ -5,6 +5,7 @@ import Home from "./components/pages/Home";
 import { productsdata } from "./productsdata";
 import { Route, Link } from "react-router-dom";
 import ShowCartInfo from './components/pages/ShowCartInfo'
+import Footer from './components/Footer'
 
 import ProductList from "./components/pages/ProductList";
 import ProductDescription from "./components/pages/ProductDescription";
@@ -34,7 +35,7 @@ function App() {
   //console.log(cartItems);
   return (
     <>
-      <NavBar cartItems={cartItems} />
+      <NavBar cartItems={cartItems}/>
 
       <Route path={"/"} exact>
         {" "}
@@ -55,6 +56,7 @@ function App() {
       <Route path={"/showcartinfo"} exact>
         <ShowCartInfo cartItems={cartItems} />
       </Route>
+      <Footer/>
     </>
   );
 }

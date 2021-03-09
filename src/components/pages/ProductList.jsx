@@ -3,9 +3,9 @@ import ProductCard from "../ProductCard";
 const ProductList = (props) => {
   return (
     <>
-      <div className="container">
+      <div className="container mb-5">
         <div className="mb-5">
-          <h1 className={"text-center text-uppercase"}>{props.name}</h1>
+          <p className={"text-center text-uppercase display-4"}>{props.name}</p>
         </div>
         <div className={" row  ml-4"}>
           {props.items.map((item, i) => (

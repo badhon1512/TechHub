@@ -26,18 +26,18 @@ const ProductCard = (props) => {
         <h4>{props.item.brand} </h4>
         <h6>{props.item.model} </h6>
         <h6>Price : {props.item.price} tk </h6>
+        <Link
+          to={"/product-list/product"}
+          className="text-decoration-none"
+          onClick={() => {
+            props.getProduct(props.item);
+          }}
+        >
+          See Details
+        </Link>
         <div>
           {props.item.quantity ? (
             <div>
-             
-              <Link
-                to={"/product-list/product"}
-                onClick={() => {
-                  props.getProduct(props.item);
-                }}
-              >
-                See Details
-              </Link>
               <div
                 className={"bg-primary mr-5 ml-5 text-light"}
                 style={{
@@ -49,9 +49,12 @@ const ProductCard = (props) => {
                 In Stock
               </div>
               <br />
-              <button className="btn btn-primary m-2" onClick={()=>{
-                 props.getcartItems(props.item);
-              }}>
+              <button
+                className="btn btn-primary m-2"
+                onClick={() => {
+                  props.getcartItems(props.item);
+                }}
+              >
                 <img
                   style={{ height: "1rem", width: "1rem" }}
                   src="./assets/cart.svg"
@@ -62,8 +65,6 @@ const ProductCard = (props) => {
             </div>
           ) : (
             <div>
-              
-              <Link to={"/product-list/product"}>See Details</Link>
               <div
                 className={"bg-warning mr-5 ml-5 text-dark"}
                 style={{

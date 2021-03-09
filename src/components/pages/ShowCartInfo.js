@@ -55,7 +55,7 @@ export default function ShowCartInfo(props) {
   }, []);
 
   return (
-    <div className="container" style={{ fontSize: "1.5rem" }}>
+    <div className="container" style={{ fontSize: "1.5rem"}}>
       <div className="display-4 text-center mb-5">Shopping Cart</div>
       <table className="table table-striped">
         <thead>
@@ -114,7 +114,7 @@ export default function ShowCartInfo(props) {
       <h3 className="bg-warning text-center">
         <tr className="row p-2">
           <td className="col-sm-8">Total Price</td>
-          <td className="col-sm-2">{totalPrice}</td>
+          <td className="col-sm-2">{totalPrice} Tk</td>
         </tr>
       </h3>
     </div>

@@ -5,7 +5,7 @@ import "../style/Navbar.module.css";
 
 function NavBar(props) {
   return (
-    <div>
+    <div className="sticky-top">
       {console.log(props)}
 
       <Navbar bg="dark" variant="dark">

@@ -1,6 +1,6 @@
 export const productsdata = [
   [
-    "laptop",
+    "Laptop",
     [
       {
         id: 1001,
