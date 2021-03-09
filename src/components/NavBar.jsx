@@ -35,7 +35,7 @@ function NavBar(props) {
               src="./assets/cart.svg"
               alt=""
             />
-            {props.cartItems.length}
+            <span className="badge badge-dark"> {props.cartItems.length}</span>
           </Link>
         </Nav>
       </Navbar>

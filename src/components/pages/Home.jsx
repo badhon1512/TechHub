@@ -9,6 +9,9 @@ function Home(props) {
   return (
 
     <div className={"container"}>
+      <div className="display-4 text-center mb-5">
+        Available Products
+      </div>
     <div className={"row ml-4"} >
 
 

@@ -3,20 +3,9 @@ import React, { useState, useEffect } from "react";
 
 export default function ShowCartInfo(props) {
   const [itemQuantity, setItemQuantity] = useState([{}]);
-  
 
-   let totalPrice=0
-       itemQuantity.map((item)=>
-       
-         totalPrice+=item.price*item.quantity
-       )
-
-      
-
-      
-
-       
-  
+  let totalPrice = 0;
+  itemQuantity.map((item) => (totalPrice += item.price * item.quantity));
 
   const incrementitemQuantity = (id) => {
     // let value;
@@ -24,70 +13,50 @@ export default function ShowCartInfo(props) {
     //  // item[0]===id ? value = item[1] : value =
 
     // })
-    let update=itemQuantity.map((item)=>{
-
-      if(item.id===id && item.quantity<item.totalQuantity)
-      {
+    let update = itemQuantity.map((item) => {
+      if (item.id === id && item.quantity < item.totalQuantity) {
         item.quantity++;
       }
       //console.log("iteminc",item)
-      return item
-    })
-    setItemQuantity(update)
-   // console.log("inc",itemQuantity);
+      return item;
+    });
+    setItemQuantity(update);
+    // console.log("inc",itemQuantity);
   };
 
   const decrementitemQuantity = (id) => {
-
-    let update=itemQuantity.map((item)=>{
-
-      if(item.id===id && item.quantity!==0)
-      {
+    let update = itemQuantity.map((item) => {
+      if (item.id === id && item.quantity !== 0) {
         item.quantity--;
       }
       //console.log("iteminc",item)
-      return item
-    })
-    setItemQuantity(update)
-  }
-
-
+      return item;
+    });
+    setItemQuantity(update);
+  };
 
   useEffect(() => {
-    
-    
-    let newItems= props.cartItems.map((item) => {
+    let newItems = props.cartItems.map((item) => {
+      let update = {
+        id: item.id,
+        model: item.model,
+        image: item.image,
+        price: item.price,
+        quantity: 1,
+        totalQuantity: item.quantity,
+      };
 
+      return update;
 
-      
+      //value=[...value,[id]=1]
+    });
 
-    
-      let update={id:item.id,model:item.model,image:item.image,price:item.price,"quantity":1,totalQuantity:item.quantity}
-   
-     
-      return update
-   
-
-     
-    //value=[...value,[id]=1]
-      
-      
-    
-
-
-    }
-
-   
-     
-      
-    )
-
-    setItemQuantity(newItems)
-  }, [])
-  
+    setItemQuantity(newItems);
+  }, []);
 
   return (
     <div className="container" style={{ fontSize: "1.5rem" }}>
+      <div className="display-4 text-center mb-5">Shopping Cart</div>
       <table className="table table-striped">
         <thead>
           <tr className="bg-primary text-white">
@@ -100,12 +69,7 @@ export default function ShowCartInfo(props) {
         </thead>
         <tbody>
           {itemQuantity.map((item) => (
-
-            
-             
-               
             <tr key={item.id}>
-             
               <th scope="row">{item.model}</th>
               <td>
                 <img
@@ -140,19 +104,19 @@ export default function ShowCartInfo(props) {
               </td>
 
               <td>{item.price}</td>
-             
 
-              <td>{item.quantity*item.price}</td>
+              <td>{item.quantity * item.price}</td>
             </tr>
-           
           ))}
-          
-
         </tbody>
       </table>
 
-      <h3 className="text-center bg-warning"> Total Price {totalPrice}</h3>
+      <h3 className="bg-warning text-center">
+        <tr className="row p-2">
+          <td className="col-sm-8">Total Price</td>
+          <td className="col-sm-2">{totalPrice}</td>
+        </tr>
+      </h3>
     </div>
   );
 }
-
