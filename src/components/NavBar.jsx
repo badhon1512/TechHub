@@ -5,7 +5,7 @@ import "../style/Navbar.module.css";
 
 function NavBar(props) {
   return (
-    <div>
+    <div className="sticky-top">
       {console.log(props)}
 
       <Navbar bg="dark" variant="dark">
@@ -35,7 +35,7 @@ function NavBar(props) {
               src="./assets/cart.svg"
               alt=""
             />
-            {props.cartItems.length}
+            <span className="badge badge-dark"> {props.cartItems.length}</span>
           </Link>
         </Nav>
       </Navbar>

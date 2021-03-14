@@ -1,13 +1,13 @@
 export const productsdata = [
   [
-    "laptop",
+    "Laptop",
     [
       {
         id: 1001,
         brand: "Acer",
         model: "Acer Aspire 3 A315-23 Ryzen 3 3250U 15.6''HD Laptop",
         price: 41800,
-        quantity: 0,
+        quantity: 20,
         description: `Acer Aspire 3 A315-23 Laptop comes with AMD Ryzen 3 3250U (2.6 GHz up to 3.5 GHz, 1 MB L2 cache, 2 cores) Processor, 4GB DDR4 RAM, 1 TB 5400 RPM HDD and AMD Radeon dual-core Graphics. This Laptop is also featured with 15.6" HD 1366 x 768 resolution, high-brightness Acer ComfyView LED-backlit TFT LCD Display, 3-pin 45W AC Adapter, Windows 10 64-bit. The 802.11a/b/g/n/ac wireless LAN, IEEE 802.11ac/a/b/g/n and Bluetooth V4 Network & Wireless Connectivity are available in this laptop. Here, HD webcam with 640 x 480 resolution, SD media card reader, Stereo Speaker, mic and headphone combo jack, 1 x HDMI, 2 x USB 3.2 Gen 1 ports; 1 x USB 2.0 ports and connectors are also available in this Acer Laptop. The new Acer Aspire 3 Laptop has 02 years warranty.`,
         warranty: 2,
         image: `https://www.startech.com.bd/image/cache/catalog/laptop/acer/acer-aspire-3/acer-aspire-3-01-500x500.jpg`,
@@ -28,7 +28,7 @@ export const productsdata = [
         brand: "Xiomi",
         model: "Xiaomi Redmi Book 14 Ryzen 5 4500U 16GB RAM 14” FHD Laptop",
         price: 69000,
-        quantity: 0,
+        quantity: 20,
         description: `The laptop comes with AMD Ryzen 5 4500U powers the device along with 16GB of DDR4 RAM. For graphics, the laptop offers AMD Radeon Vega 8 Graphics. Ultra-low-voltage platform and quad-core processing provide maximum high-efficiency power. The RedmiBook 14 features a 14-inch Full HD display with narrow 5.75mm bezels and a solid 81.2% screen-to-body ratio. Substantial high-bandwidth RAM to smoothly run your games, photos, and video-editing applications, as well as multiple programs and browser tabs all at once. RedmiBook 14 Ryzen Edition is up to 512GB of solid-state drive (SSD) which provides room to store pictures, videos, music, and more. The machine carries a new cooling system to disperse heat. You can connect the device to a high-definition monitor or projector. The RedmiBook 14 Ryzen Edition is powered with a 46W battery, local video playback for 8.5 hours, online video playback for 6.5 hours, web browsing for 6.5 hours. It supports ultra-low power standby as well as Xiaomi Smart Unlock 2.0, wherein you can unlock the RedmiBook 14 Ryzen Edition in just 1.2 seconds with your Mi Band 3. Wirelessly transfer photos, music, and other media between the computer and your Bluetooth-enabled cell phone or MP3 player, or connect Bluetooth wireless accessories. Support 2.4GHz and 5GHz dual-band WiFi, Supports 802.11ac network protocol; compatible with 802.11 a/b/g/n, 867Mbpss max, Bluetooth 4.2 wireless technology. The laptop carries support for Dolby Audio and AKG tuned custom-made dual speakers. The new RedmiBook 14 Ryzen Edition offers features like USB-C, 2 USB 2.0 ports, HDMI, 3.5mm audio jack. `,
         warranty: 1,
         image: `https://www.startech.com.bd/image/cache/catalog/laptop/xiaomi-mi/redmi-book-14-ryzen-7/redmi-book-14-ryzen-7-500x500.jpg`,
@@ -39,7 +39,7 @@ export const productsdata = [
         model:
           "Xiaomi Redmi Book 13 Ryzen 5 4500U 13.3” FHD Laptop",
         price: 70000,
-        quantity: 20,
+        quantity: 0,
         description: `Xiaomi Redmi Book 13 XMA1930-DJ Laptop comes with AMD Ryzen 5 4500U (11MB Cache, 2.3GHz Up to 4.0GHz) Processor, 16GB DDR4 RAM, 512GB SATA SSD, AMD Radeon Graphics integrated graphics with Windows 10. This laptop is also designed with 13.3 Inch FHD (1920 x 1080) IPS 250nit Brightness, 45% NTSC, 178° Viewing Angle Display, Li-ion polymer battery, 40Wh; (USB-C - USB 3.0 - Fast Charging) with 3.5mm audio jack. Sound Card: Realtek ALC256, Speaker: 2 × 2W, Sound system: support DTS Audio Processing technology. The new Xiaomi Redmi Book 13 XMA1930-DJ laptop comes with a Full-size keyboard, 1.3mm key process, VGA WebCam, microSD media card reader with AC Adapter, 100-240V; Support 1C QC. Here Wi-Fi 802.11 B/G/N/Ac - 2.4 GHz + 5 GHz Intel 2 × 2 WiFi and Bluetooth 5.0 are also available. The new Xiaomi Redmi Book 13 XMA1930-DJ Laptop has 01 year (battery adapter 06 months) warranty.`,
         warranty: 1,
         image: `https://www.startech.com.bd/image/cache/catalog/laptop/xiaomi-mi/redmi-book-13/redmi-book-13-01-500x500.jpg`,
@@ -108,7 +108,7 @@ export const productsdata = [
         brand:"Sony",
         model:"Sony ALPHA A6100 24.MP Mirrorless Digital Camera with 16-50mm Lens",
         price:45000,
-        quantity:21,
+        quantity:0,
         description:"Capture special moments and portraits to remember and share. Thanks to stunning image quality and speed based on technology developed for our full-frame models, you can leave the hard work to the camera. The α6100 ensures you'll never miss an instant. Keeping active subjects in constant, steady focus is absolutely vital to capturing every important moment, whether you're covering a sporting event or documenting everyday life. Sony's sophisticated AI-based subject-tracking algorithms won't let you down, processing massive volumes of spatial data at high speed and in real time. Real-time Eye AF provides continuous eye tracking when shooting portraits in motion. You can prioritize either the left or the right eye, and it works even when the face is partially hidden, backlit or facing downwards. Sony's innovative eye-detection algorithms have been adapted to animal as well as human, to give you sharply focused pet portraits and beautiful wildlife shots. The camera's wide AF coverage is based on dense arrays of 425 phase-detection points and 425 contrast-detection points, for greatly increased detection accuracy. Fast performance from the latest-generation processing engine helps achieve a remarkable 0.02-second AF acquisition speed, while advanced algorithms work to predict your subject's future location. Impressively speedy internal processing and the high-capacity buffer memory mean you can fire off continuous shots at up to 11fps with after-view or 8fps for real-time preview, with minimal display lag. You can take around 77 shots in JPEG (Standard) format in one continuous burst. Silent shooting is helpful in situations where noise would be distracting, such as at live performances or when taking animal portraits. The α6100 can shoot continuously without shutter noise at up to 8fps with AF/AE tracking, even in AF-C mode, and with Real-time Eye AF or with Real-time Tracking.",
         warranty:4,
         image:"https://www.startech.com.bd/image/cache/catalog/camera/mirriorless/sony/alpha-a6100/alpha-a6100-500x500.jpg"
@@ -164,7 +164,7 @@ export const productsdata = [
         brand: "AMD",
         model: `AMD Ryzen 5 3600 Processor`,
         price: 16500,
-        quantity: 20,
+        quantity: 0,
         description: `AMD Ryzen 5 3600 Processor
         The AMD Ryzen 5 3600 Processor is built in intelligence featuring 6 processor cores, 12 threads, and an astonishingly efficient 65W TDP. In this proessor, It stands with 3.6GHz Base Clock, 4.2GHz Max Boost Clock, 3MB L2 Cache, 32MB L3 Cache with AM4 Package and TSMC 7nm FinFET CMOS. This processor is built with PCIe 4.0 x16 and Wraith Stealth Thermal Solution. The Ryzen 5 3600 provides DDR4 3200MHz memory with 2 memory channels. This processor also has 03 years warranty.`,
         warranty: 3,
