@@ -6,7 +6,7 @@ const ItemCard = (props) => {
     <>
       <div
         className="shadow-sm"
-        onClick={() => props.getItems(props.product[0], props.product[1])}
+        onClick={() => props.getItemName(props.product.name)}
         style={{
           width: "18rem",
           textAlign: "center",
@@ -16,12 +16,12 @@ const ItemCard = (props) => {
       >
         <img
           style={{ borderRadius: "50%", height: "100px", width: "100px" }}
-          src={props.product[1][0].image}
+          src={'http://cdn.mos.cms.futurecdn.net/6t8Zh249QiFmVnkQdCCtHK.jpg'}
           alt=""
         />
         <br />
-        <h3>{props.product[0]}</h3>
-        <p>Models available : {props.product[1].length}</p>
+        <h3>{props.product.name}</h3>
+        <p>Models available : {props.product.modelAvailable}</p>
       </div>
     </>
   );

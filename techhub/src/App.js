@@ -18,8 +18,8 @@ function App() {
   const [product, setProduct] = useState("");
   const [cartItems, setCartItems] = useState([]);
 
-  const getItems = (name, data) => {
-    setItems(data);
+  const getItemName = (name) => {
+   
     setItemsName(name);
   };
   const getProduct = (product) => {
@@ -39,7 +39,7 @@ function App() {
 
       <Route path={"/"} exact>
         {" "}
-        <Home getItems={getItems} products={products} />
+        <Home getItemName={getItemName} products={products} />
       </Route>
 
       <Route path={"/product-list"} exact>
