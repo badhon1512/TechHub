@@ -11,7 +11,7 @@ function Home(props) {
     <div className={"container"}>
       <div className="display-4 text-center mb-5">Available Products</div>
       <div className={"row ml-4"}>
-        {productIype.map((product, index) => (
+        {props.products.map((product, index) => (
           <div key={index} className={"col-sm-4  mb-5"}>
             <Link to={"/product-list"} className="text-decoration-none">
               <ItemCard getItemName={props.getItemName} product={product} />

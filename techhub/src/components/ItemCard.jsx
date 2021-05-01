@@ -2,11 +2,12 @@ import React from "react";
 import "../style/ProductCart.module.css";
 
 const ItemCard = (props) => {
+  console.log(props);
   return (
     <>
       <div
         className="shadow-sm"
-        onClick={() => props.getItemName(props.product.name)}
+        onClick={() => props.getItemName(props.product[0])}
         style={{
           width: "18rem",
           textAlign: "center",
@@ -20,8 +21,8 @@ const ItemCard = (props) => {
           alt=""
         />
         <br />
-        <h3>{props.product.name}</h3>
-        <p>Models available : {props.product.modelAvailable}</p>
+        <h3>{props.product[0]}</h3>
+        <p>Models available : {props.product[1].length}</p>
       </div>
     </>
   );
