@@ -27,7 +27,7 @@ function NavBar(props) {
         </Form>
 
         <Nav className="mr-1 ml-1">
-          <Nav.Link href="#pricing">Login</Nav.Link>
+          <Link to="/login">Login</Link>
 
           <Link to="/showcartinfo">
             <img

@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\productController;
+use App\Http\Controllers\userController;
+
 
 
 /*
@@ -21,3 +23,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('product', productController::class);
+
+
+
+Route::post('/login',[userController::class,'loginCheck'])->middleware('LoginRequestDataValidation');

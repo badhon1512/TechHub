@@ -1,23 +1,42 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Home from "./components/pages/Home";
 import { productsdata } from "./productsdata";
 import { Route, Link } from "react-router-dom";
 import ShowCartInfo from './components/pages/ShowCartInfo'
 import Footer from './components/Footer'
 
-import {useEffect} from 'react'
+import Login from './components/pages/Login'
+
 
 import ProductList from "./components/pages/ProductList";
 import ProductDescription from "./components/pages/ProductDescription";
 
 function App() {
-  const [error, setError] = useState(null);
-  
-  const [products, setProducts] = useState([]);
-  
 
+  const [products, setProducts] = useState([]);
+
+  const [items, setItems] = useState([]);
+  const [itemsName, setItemsName] = useState("");
+  const [product, setProduct] = useState("");
+  const [cartItems, setCartItems] = useState([]);
+  const [error, setError] = useState(null);
+
+  const getItems = (name, data) => {
+    setItems(data);
+    setItemsName(name);
+  };
+  const getProduct = (product) => {
+    setProduct(product);
+    console.log(product);
+  };
+
+  const getcartItems = (item) => {
+    let newItems;
+    cartItems.length ? (newItems = [...cartItems, item]) : (newItems = [item]);
+    setCartItems(newItems);
+  };
 
 
   useEffect(() => {
@@ -60,34 +79,14 @@ function App() {
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
         // exceptions from actual bugs in components.
-        (error) => {
+        (e) => {
           
-          setError(error);
+          setError(e);
         }
       )
   },[])
 
   
-
-  const [items, setItems] = useState([]);
-  const [itemsName, setItemsName] = useState("");
-  const [product, setProduct] = useState("");
-  const [cartItems, setCartItems] = useState([]);
-
-  const getItemName = (name) => {
-   
-    setItemsName(name);
-  };
-  const getProduct = (product) => {
-    setProduct(product);
-    console.log(product);
-  };
-
-  const getcartItems = (item) => {
-    let newItems;
-    cartItems.length ? (newItems = [...cartItems, item]) : (newItems = [item]);
-    setCartItems(newItems);
-  };
   //console.log(cartItems);
   return (
     <>
@@ -95,7 +94,7 @@ function App() {
 
       <Route path={"/"} exact>
         {" "}
-        <Home getItemName={getItemName} products={products} />
+        <Home getItems={getItems} products={products} />
       </Route>
 
       <Route path={"/product-list"} exact>
@@ -111,6 +110,11 @@ function App() {
       </Route>
       <Route path={"/showcartinfo"} exact>
         <ShowCartInfo cartItems={cartItems} />
+      </Route>
+
+
+      <Route path={"/login"} exact>
+        <Login  />
       </Route>
       <Footer/>
     </>
