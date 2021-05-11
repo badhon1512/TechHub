@@ -65,7 +65,7 @@ function NavBar(props) {
         <Navbar.Brand href="/">Tech-Hub</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="">Product Information</Nav.Link>
+          <Nav.Link href="/product-information">Product Information</Nav.Link>
           <Nav.Link href="">Add new Product</Nav.Link>
           <Nav.Link href="">User Information</Nav.Link>
           <Nav.Link href="">Add new user</Nav.Link>

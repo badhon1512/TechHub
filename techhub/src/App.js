@@ -7,6 +7,8 @@ import { Route, Link } from "react-router-dom";
 import ShowCartInfo from './components/pages/ShowCartInfo'
 import Footer from './components/Footer'
 
+import ProductInformation  from './components/pages/ProductInformation';
+
 import Login from './components/pages/Login'
 
 
@@ -16,6 +18,8 @@ import ProductDescription from "./components/pages/ProductDescription";
 function App() {
 
   const [products, setProducts] = useState([]);
+
+  const [allProducts, setAllProducts] = useState([]);
 
   const [items, setItems] = useState([]);
   const [itemsName, setItemsName] = useState("");
@@ -46,6 +50,9 @@ function App() {
         (result) => {
 
           let types=[];
+
+          setAllProducts(result);
+          
          
           //setProducts([...result]);
           result.map((item)=>{
@@ -86,6 +93,8 @@ function App() {
       )
   },[])
 
+  //console.log(allProducts);
+
   
   //console.log(cartItems);
   return (
@@ -110,6 +119,12 @@ function App() {
       </Route>
       <Route path={"/showcartinfo"} exact>
         <ShowCartInfo cartItems={cartItems} />
+      </Route>
+
+      <Route path={'/product-information'}>
+
+        <ProductInformation  products={allProducts}/>
+
       </Route>
 
 
