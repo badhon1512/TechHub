@@ -2,15 +2,22 @@ import React from 'react'
 import {Form,Button} from 'react-bootstrap'
 import {useState} from 'react'
 
+import {useHistory} from 'react-router-dom'
+
 function Login() {
 
  const  [user,setUser]=useState({email:"",password:""});
  const  [valid,setValid]=useState({email:"",password:""});
+ const [userData,setUserData]=useState([]);
+
+ const history=useHistory();
 
 
- function validation(e)
+ async function validation(e)
  {
    e.preventDefault();
+
+   var valid=true;
    setValid({email:"",password:""});
    let validobj={email:"",password:""};
    var emailreg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -18,6 +25,7 @@ function Login() {
    if(user.password.length<8)
    {
      validobj.password="Password length must be at least 8 char";
+     valid=false;
           
    }
 
@@ -25,6 +33,7 @@ function Login() {
    {
 
     validobj.email="Please enter a valid email";
+    valid=false;
      
     
     
@@ -32,6 +41,38 @@ function Login() {
 
 
    setValid(validobj);
+
+   if(valid)
+   {
+       let result= await fetch('http://127.0.0.1:8000/api/login',{
+          method:'POST',
+          headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(user)
+
+        })
+
+        
+
+        if(result.status==200)
+        {
+          result=await result.json();
+          result=result[0];
+
+          if(result)
+          {
+            alert("Login successfull");
+            localStorage.setItem('user',JSON.stringify(result));
+            history.push('/dashboard')
+          }
+          else{
+            alert("User name or password is Invalid");
+          }
+        }
+        else{
+          console.log('no');
+        }
+        
+   }
 
 
    

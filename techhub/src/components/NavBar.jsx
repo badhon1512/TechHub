@@ -4,11 +4,17 @@ import {Link} from 'react-router-dom';
 import "../style/Navbar.module.css";
 
 function NavBar(props) {
+
+
+  const user=JSON.parse(localStorage.getItem('user'));
   return (
     <div className="sticky-top">
-      {console.log(props)}
 
-      <Navbar bg="dark" variant="dark">
+
+      {
+        user.type!="admin"?  
+        <div>
+<Navbar bg="dark" variant="dark">
         <Navbar.Brand href="/">Tech-Hub</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
@@ -27,7 +33,15 @@ function NavBar(props) {
         </Form>
 
         <Nav className="mr-1 ml-1">
-          <Link to="/login">Login</Link>
+
+          {
+          
+          localStorage.getItem('user') ? user.name : <Link to="/login">Login</Link>
+          
+
+          
+          }
+         
 
           <Link to="/showcartinfo">
             <img
@@ -40,6 +54,45 @@ function NavBar(props) {
         </Nav>
       </Navbar>
       <br />
+        </div>
+
+        :
+
+        <div>
+
+
+<Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="/">Tech-Hub</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="">Product Information</Nav.Link>
+          <Nav.Link href="">Add new Product</Nav.Link>
+          <Nav.Link href="">User Information</Nav.Link>
+          <Nav.Link href="">Add new user</Nav.Link>
+        </Nav>
+        
+
+        <Nav className="mr-1 ml-1">
+
+          {
+          
+          localStorage.getItem('user') ? user.name : <Link to="/login">Login</Link>
+          
+
+          
+          }
+         
+
+          
+        </Nav>
+      </Navbar>
+      <br />
+
+        </div>
+      }
+     
+ 
+      
     </div>
   );
 }
