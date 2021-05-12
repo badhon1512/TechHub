@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function ProductDescription(props) {
+
+    var user=JSON.parse(localStorage.getItem('user'));
     return (
         <div>
             <div className="container mb-5 pb-5">
@@ -12,6 +14,20 @@ export default function ProductDescription(props) {
                 <p style={{fontSize: "2rem"}}>Warranty: {props.productDetails.warranty} years</p>
                 <p style={{fontSize: "2rem"}}>Description: </p>
                 <p style={{fontSize: "1.2rem"}}>{props.productDetails.description}</p>
+                
+
+
+                {
+                     
+                   
+                    user.type=="admin" ? 
+                    <div>
+
+                        <button>Update Information</button>
+                        <button>Delete Information</button>
+
+                    </div> : ''
+                }
             </div>
         </div>
     )

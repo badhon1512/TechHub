@@ -114,7 +114,7 @@ function App() {
           getcartItems={getcartItems}
         />
       </Route>
-      <Route path={"/product-list/product"} exact>
+      <Route path={"/product-list/:id"} exact>
         <ProductDescription productDetails={product} />
       </Route>
       <Route path={"/showcartinfo"} exact>
@@ -123,7 +123,7 @@ function App() {
 
       <Route path={'/product-information'}>
 
-        <ProductInformation  products={allProducts}/>
+        <ProductInformation getProduct={getProduct}  products={allProducts}/>
 
       </Route>
 
