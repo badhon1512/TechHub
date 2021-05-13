@@ -6,6 +6,7 @@ import { productsdata } from "./productsdata";
 import { Route, Link } from "react-router-dom";
 import ShowCartInfo from './components/pages/ShowCartInfo'
 import Footer from './components/Footer'
+import AddProduct from './components/pages/AddProduct'
 
 import ProductInformation  from './components/pages/ProductInformation';
 
@@ -130,6 +131,12 @@ function App() {
 
       <Route path={"/login"} exact>
         <Login  />
+      </Route>
+
+      <Route path={'/add-product'}>
+
+        <AddProduct/>
+
       </Route>
       <Footer/>
     </>
