@@ -2,15 +2,15 @@ import {Form,Button} from 'react-bootstrap'
 
 import { useState } from 'react'
 
-const AddProduct=()=>{
+ const AddProduct=()=>{
 
 
-  const [product,setProduct]=useState({model:'',price:'',quantity:'',warranty:'',decription:'',picture:''})
+  const [product,setProduct]=useState({brand:"auus",model:'',price:'',quantity:'',warranty:'',type:"laptop",description:'',picture:'pic'})
 
-  const [productValid,setProductValid]=useState({model:'',price:'',quantity:'',warranty:'',decription:'',type:'laptop',picture:'pic'})
+  const [productValid,setProductValid]=useState({brand:"auus",model:'',price:'',quantity:'',warranty:'',decription:'',type:'laptop',picture:'pic'})
 
 
-  const validation=(e)=>{
+  async function validation(e){
 
     e.preventDefault()
 
@@ -51,16 +51,28 @@ const AddProduct=()=>{
     }
 
 
-
-
-
-
-
     setProductValid(productvalidInfo);
 
     if(flag){
 
-      fetch()
+      let result=await fetch('http://127.0.0.1:8000/api/product',{
+        method:'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(product)
+
+      })
+
+      if(result.status===200)
+      {
+        alert("product added Successfully");
+        setProduct({brand:"auus",model:'',price:'',quantity:'',warranty:'',decription:'',type:'laptop',picture:'pic'})
+      }
+      else
+      {
+        console.log(product)
+        alert("product added Failure");
+
+      }
     }
 
     
